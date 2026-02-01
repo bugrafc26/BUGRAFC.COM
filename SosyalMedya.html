@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sosyal Medya Yönetimi & Strateji - BUGRA FC</title>
+    
+    <meta name="description" content="BUGRA FC ile sosyal medyada markanızı zirveye taşıyın. Stratejik takip, profesyonel reklam yönetimi ve butik hizmet anlayışı.">
+    <meta name="author" content="BUGRA FC">
+    <meta name="theme-color" content="#0f0c29">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #0a0a0a; color: #e5e7eb; }
+        .animated-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: linear-gradient(45deg, #0f0c29, #302b63, #24243e, #1f379b); background-size: 400% 400%; animation: gradient-animation 20s ease infinite; }
+        @keyframes gradient-animation { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        ::-webkit-scrollbar { width: 8px; } ::-webkit-scrollbar-track { background: #111827; } ::-webkit-scrollbar-thumb { background: #0ea5e9; border-radius: 10px; }
+        .fade-in-up { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+        .is-visible { opacity: 1; transform: translateY(0); }
+        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.08); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .glass-card:hover { background: rgba(255, 255, 255, 0.07); border-color: rgba(14, 165, 233, 0.5); transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+        .shine-button { position: relative; overflow: hidden; }
+        .shine-button::before { content: ''; position: absolute; top: 0; left: -100%; width: 75%; height: 100%; background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%); transform: skewX(-25deg); transition: left 0.7s ease-in-out; }
+        .shine-button:hover::before { left: 150%; }
+        
+        @keyframes bounce-slow { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        .animate-bounce-slow { animation: bounce-slow 4s ease-in-out infinite; }
+        .process-step::after { content: ''; position: absolute; top: 2rem; left: 100%; width: 100%; height: 2px; background: linear-gradient(90deg, #0ea5e9, transparent); z-index: -1; }
+        @media (max-width: 768px) { .process-step::after { display: none; } }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <div class="animated-bg"></div>
+    
+    <header class="fixed top-0 left-0 w-full bg-black/30 backdrop-blur-sm z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="text-3xl font-black text-white tracking-wider hover:text-sky-400">BUGRA FC</a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-200 hover:text-sky-400 font-semibold">Anasayfa</a>
+                    <a href="hakkimda.html" class="text-gray-200 hover:text-sky-400 font-semibold">Hakkımızda</a>
+                    <a href="Yazilim.html" class="text-gray-200 hover:text-sky-400 font-semibold">Yazılım</a>
+                    <a href="GrafikTasarim.html" class="text-gray-200 hover:text-sky-400 font-semibold">Grafik Tasarım</a>
+                    <a href="SosyalMedya.html" class="text-sky-400 font-bold underline decoration-2 underline-offset-8">Sosyal Medya</a>
+                    <a href="iletisim.html" class="text-gray-200 hover:text-sky-400 font-semibold">İletişim</a>
+                </nav>
+                <div class="md:hidden"><button id="menu-btn" class="text-white"><i id="menu-icon" data-lucide="menu" class="w-8 h-8"></i></button></div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-black/90 absolute w-full">
+            <a href="index.html" class="block py-4 px-6 text-white border-b border-white/5">Anasayfa</a>
+            <a href="hakkimda.html" class="block py-4 px-6 text-white border-b border-white/5">Hakkımızda</a>
+            <a href="Yazilim.html" class="block py-4 px-6 text-white border-b border-white/5">Yazılım</a>
+            <a href="GrafikTasarim.html" class="block py-4 px-6 text-white border-b border-white/5">Grafik Tasarım</a>
+            <a href="SosyalMedya.html" class="block py-4 px-6 text-sky-400 font-bold bg-sky-500/10">Sosyal Medya</a>
+            <a href="iletisim.html" class="block py-4 px-6 text-white">İletişim</a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <section class="py-16 lg:py-24">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-5xl lg:text-7xl font-black text-white mb-6 fade-in-up">Dijital Etkinizi <span class="text-sky-400">Yönetin</span></h1>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-16 fade-in-up">Butik hizmet anlayışıyla markanızı dijitalin kalbine yerleştiriyoruz.</p>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                    <div class="glass-card p-10 rounded-3xl fade-in-up">
+                        <div class="w-12 h-12 mx-auto mb-4 bg-gradient-to-tr from-orange-500 to-pink-500 rounded-xl flex items-center justify-center"><i data-lucide="instagram" class="text-white"></i></div>
+                        <div class="text-5xl font-black text-white counter" data-target="12000">0</div>
+                        <div class="text-gray-500 font-bold mt-2">INSTAGRAM ERİŞİMİ</div>
+                    </div>
+                    <div class="glass-card p-10 rounded-3xl fade-in-up" style="transition-delay: 150ms;">
+                        <div class="w-12 h-12 mx-auto mb-4 bg-black border border-white/20 rounded-xl flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.03 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-1.13-.31-2.34-.12-3.41.37-1.13.56-1.89 1.73-1.93 2.99-.04 1.1.5 2.15 1.41 2.72.91.59 2.09.68 3.06.31 1.03-.35 1.83-1.28 1.93-2.36.01-4.08 0-8.15 0-12.22z"/></svg>
+                        </div>
+                        <div class="text-5xl font-black text-white counter" data-target="3000">0</div>
+                        <div class="text-gray-500 font-bold mt-2">TIKTOK TAKİPÇİ</div>
+                    </div>
+                    <div class="glass-card p-10 rounded-3xl fade-in-up" style="transition-delay: 300ms;">
+                        <div class="w-12 h-12 mx-auto mb-4 bg-red-600 rounded-xl flex items-center justify-center"><i data-lucide="youtube" class="text-white"></i></div>
+                        <div class="text-5xl font-black text-white counter" data-target="5000">0</div>
+                        <div class="text-gray-500 font-bold mt-2">YOUTUBE ABONE</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hizmetler" class="py-20 bg-white/5">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl lg:text-6xl font-black text-white mb-6 fade-in-up">Sunduğumuz Sosyal Medya Hizmetleri</h2>
+                    <p class="text-white text-lg font-medium max-w-3xl mx-auto fade-in-up opacity-90">Markanızın dijitaldeki sesini güçlendirmek için kapsamlı çözümler üretiyoruz.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="glass-card p-10 rounded-2xl fade-in-up flex flex-col">
+                        <i data-lucide="users" class="w-12 h-12 text-sky-400 mb-6"></i>
+                        <h3 class="text-2xl font-black text-white mb-4">1. Sosyal Medya Uzmanlığı</h3>
+                        <p class="text-gray-300 font-medium mb-8">Markanızın sosyal medya hesapları, kurumsal kimliğinize uygun şekilde yönetilir. Stratejik planlama önceliğimizdir.</p>
+                        <div class="mt-auto pt-6 border-t border-white/10">
+                            <h4 class="text-sky-400 text-xs font-black uppercase tracking-widest mb-4">Hizmet Kapsamı</h4>
+                            <ul class="space-y-3 text-sm font-semibold text-gray-200">
+                                <li class="flex gap-2"><i data-lucide="check-circle-2" class="text-sky-500 w-5"></i> İçerik Stratejisi</li>
+                                <li class="flex gap-2"><i data-lucide="check-circle-2" class="text-sky-500 w-5"></i> Yayın Takvimi</li>
+                                <li class="flex gap-2"><i data-lucide="check-circle-2" class="text-sky-500 w-5"></i> Marka Dili Yönetimi</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="glass-card p-10 rounded-2xl fade-in-up flex flex-col" style="transition-delay: 150ms;">
+                        <i data-lucide="target" class="w-12 h-12 text-sky-400 mb-6"></i>
+                        <h3 class="text-2xl font-black text-white mb-4">2. Reklam Yönetimi</h3>
+                        <p class="text-gray-300 font-medium mb-8">Meta reklam araçları üzerinden hedef kitleye yönelik profesyonel reklam çalışmaları yürütülür.</p>
+                        <div class="mt-auto pt-6 border-t border-white/10">
+                            <h4 class="text-sky-400 text-xs font-black uppercase tracking-widest mb-4">Hizmet Kapsamı</h4>
+                            <ul class="space-y-3 text-sm font-semibold text-gray-200">
+                                <li class="flex gap-2"><i data-lucide="check-circle-2" class="text-sky-500 w-5"></i> Meta Reklamları</li>
+                                <li class="flex gap-2"><i data-lucide="check-circle-2" class="text-sky-500 w-5"></i> Bütçe Planlaması</li>
+                                <li class="flex gap-2"><i data-lucide="check-circle-2" class="text-sky-500 w-5"></i> Performans Takibi</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="glass-card p-10 rounded-2xl fade-in-up flex flex-col" style="transition-delay: 300ms;">
+                        <i data-lucide="bar-chart-big" class="w-12 h-12 text-sky-400 mb-6"></i>
+                        <h3 class="text-2xl font-black text-white mb-4">3. Performans Analizi</h3>
+                        <p class="text-gray-300 font-medium mb-8">Veriler analiz edilerek iyileştirme alanları belirlenir ve süreçler optimize edilir.</p>
+                        <div class="mt-auto pt-6 border-t border-white/10">
+                            <h4 class="text-sky-400 text-xs font-black uppercase tracking-widest mb-4">Hizmet Kapsamı</h4>
+                            <ul class="space-y-3 text-sm font-semibold text-gray-200">
+                                <li class="flex gap-2"><i data-lucide="check-circle-2" class="text-sky-500 w-5"></i> Veri Analizi</li>
+                                <li class="flex gap-2"><i data-lucide="check-circle-2" class="text-sky-500 w-5"></i> Optimizasyon</li>
+                                <li class="flex gap-2"><i data-lucide="check-circle-2" class="text-sky-500 w-5"></i> Düzenli Raporlama</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-black/40">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl lg:text-5xl font-black text-white fade-in-up tracking-tight">Çalışma Disiplinimiz</h2>
+                    <p class="text-gray-400 mt-4 fade-in-up">Sürdürülebilir başarı için her aşamada profesyonel standartlar uyguluyoruz.</p>
+                </div>
+                <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto relative">
+                    <div class="text-center fade-in-up process-step">
+                        <div class="w-16 h-16 bg-sky-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-black text-2xl shadow-lg shadow-sky-600/30">1</div>
+                        <h4 class="text-xl font-bold text-white mb-2">Analiz</h4>
+                        <p class="text-gray-400 text-sm px-4">Pazar dinamikleri ve rakip stratejileri derinlemesine incelenir.</p>
+                    </div>
+                    <div class="text-center fade-in-up process-step" style="transition-delay: 150ms;">
+                        <div class="w-16 h-16 bg-sky-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-black text-2xl shadow-lg shadow-sky-600/30">2</div>
+                        <h4 class="text-xl font-bold text-white mb-2">Planlama</h4>
+                        <p class="text-gray-400 text-sm px-4">Marka hedeflerine özel, veriye dayalı stratejik içerik takvimi oluşturulur.</p>
+                    </div>
+                    <div class="text-center fade-in-up process-step" style="transition-delay: 300ms;">
+                        <div class="w-16 h-16 bg-sky-600 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-black text-2xl shadow-lg shadow-sky-600/30">3</div>
+                        <h4 class="text-xl font-bold text-white mb-2">Uygulama</h4>
+                        <p class="text-gray-400 text-sm px-4">Onaylanan stratejiler, yüksek kaliteli ve yaratıcı prodüksiyonla hayata geçirilir.</p>
+                    </div>
+                    <div class="text-center fade-in-up" style="transition-delay: 450ms;">
+                        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6 text-white font-black text-2xl shadow-lg shadow-green-500/30"><i data-lucide="sparkles" class="w-8 h-8"></i></div>
+                        <h4 class="text-xl font-bold text-white mb-2">Sonuç & Rapor</h4>
+                        <p class="text-gray-400 text-sm px-4">Kampanya performansları analiz edilerek düzenli veri raporlaması sunulur.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 lg:py-32 relative overflow-hidden">
+            <div class="container mx-auto px-4">
+                <div class="glass-card rounded-[40px] p-8 lg:p-16 border-white/10 relative overflow-hidden max-w-6xl mx-auto">
+                    <div class="absolute top-0 right-0 w-1/2 h-full bg-sky-500/5 -skew-x-12 transform translate-x-20 z-0"></div>
+
+                    <div class="grid lg:grid-cols-2 gap-16 items-center relative z-10">
+                        <div class="fade-in-up">
+                            <h2 class="text-4xl lg:text-6xl font-black text-white mb-8 leading-tight">
+                                Tek Muhatap,<br>
+                                <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-500">Sonsuz Adanmışlık.</span>
+                            </h2>
+                            <p class="text-gray-300 text-lg leading-relaxed mb-10 font-medium">
+                                Ajanslarda projeleriniz stajyerlerin elinde kaybolurken, <span class="text-white font-bold">BUGRA FC</span>'de markanız bizzat benim stratejik takibimdedir. Her piksel ve her reklam bütçesi tek bir elden, titizlikle yönetilir.
+                            </p>
+
+                            <div class="space-y-8">
+                                <div class="flex items-start gap-5 group">
+                                    <div class="w-12 h-12 rounded-xl bg-sky-500/20 flex items-center justify-center shrink-0 border border-sky-500/30 group-hover:bg-sky-500 transition-colors">
+                                        <i data-lucide="shield-check" class="text-sky-400 group-hover:text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-xl font-bold text-white mb-1">Direkt İletişim</h4>
+                                        <p class="text-gray-400">Doğrudan çözüm ortağınızla konuşun, vakit kaybetmeyin.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-5 group">
+                                    <div class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center shrink-0 border border-purple-500/30 group-hover:bg-purple-500 transition-colors">
+                                        <i data-lucide="zap" class="text-purple-400 group-hover:text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-xl font-bold text-white mb-1">Hızlı Reaksiyon</h4>
+                                        <p class="text-gray-400">Trendleri saniyeler içinde yakalıyor ve markanıza entegre ediyorum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-12">
+                                <a href="iletisim.html" class="shine-button inline-flex items-center gap-3 px-10 py-5 bg-white text-black font-black rounded-full hover:scale-105 transition-transform">
+                                    PROJENİZİ BAŞLATIN <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="relative fade-in-up" style="transition-delay: 200ms;">
+                            <div class="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl h-[400px]">
+                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Workplace" class="w-full h-full object-cover grayscale-[20%]">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            </div>
+                            <div class="absolute -bottom-6 right-6 bg-[#0ea5e9] p-6 rounded-2xl shadow-2xl border border-white/20 animate-bounce-slow">
+                                <p class="text-white/80 text-xs font-bold uppercase tracking-widest mb-1">Şu An Müsaitlik</p>
+                                <h5 class="text-white text-2xl font-black">Sınırlı (2/5)</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white/5 border-t border-white/5">
+            <div class="container mx-auto px-4">
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div class="fade-in-up">
+                            <h3 class="text-sky-400 font-black tracking-[0.2em] text-sm mb-4 uppercase">Profesyonel Yönetim</h3>
+                            <h2 class="text-4xl lg:text-5xl font-black text-white mb-8">Neden BUGRA FC ile Sosyal Medya?</h2>
+                            <div class="space-y-6">
+                                <div class="flex gap-4 items-center p-4 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors border border-white/5">
+                                    <div class="w-10 h-10 rounded-full bg-sky-500/20 flex items-center justify-center shrink-0">
+                                        <i data-lucide="trending-up" class="text-sky-400 w-5 h-5"></i>
+                                    </div>
+                                    <p class="text-gray-200 font-semibold text-lg">Algoritma Dostu İçerik Üretimi</p>
+                                </div>
+                                <div class="flex gap-4 items-center p-4 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors border border-white/5">
+                                    <div class="w-10 h-10 rounded-full bg-pink-500/20 flex items-center justify-center shrink-0">
+                                        <i data-lucide="heart" class="text-pink-400 w-5 h-5"></i>
+                                    </div>
+                                    <p class="text-gray-200 font-semibold text-lg">Yüksek Etkileşimli Topluluk Yönetimi</p>
+                                </div>
+                                <div class="flex gap-4 items-center p-4 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors border border-white/5">
+                                    <div class="w-10 h-10 rounded-full bg-orange-500/20 flex items-center justify-center shrink-0">
+                                        <i data-lucide="camera" class="text-orange-400 w-5 h-5"></i>
+                                    </div>
+                                    <p class="text-gray-200 font-semibold text-lg">Estetik & Kreatif Görsel Tasarımlar</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 fade-in-up" style="transition-delay: 200ms;">
+                            <div class="glass-card p-8 rounded-3xl text-center">
+                                <i data-lucide="message-circle" class="w-8 h-8 text-sky-400 mx-auto mb-4"></i>
+                                <h5 class="text-white font-black text-xl mb-2">Hızlı Destek</h5>
+                                <p class="text-gray-400 text-xs">7/24 Kesintisiz İletişim</p>
+                            </div>
+                            <div class="glass-card p-8 rounded-3xl text-center mt-8">
+                                <i data-lucide="award" class="w-8 h-8 text-yellow-400 mx-auto mb-4"></i>
+                                <h5 class="text-white font-black text-xl mb-2">Kalite</h5>
+                                <p class="text-gray-400 text-xs">Premium İçerik Standartı</p>
+                            </div>
+                            <div class="glass-card p-8 rounded-3xl text-center -mt-8">
+                                <i data-lucide="database" class="w-8 h-8 text-purple-400 mx-auto mb-4"></i>
+                                <h5 class="text-white font-black text-xl mb-2">Veri Odaklı</h5>
+                                <p class="text-gray-400 text-xs">A/B Testleri & Analiz</p>
+                            </div>
+                            <div class="glass-card p-8 rounded-3xl text-center">
+                                <i data-lucide="globe" class="w-8 h-8 text-green-400 mx-auto mb-4"></i>
+                                <h5 class="text-white font-black text-xl mb-2">Global Vizyon</h5>
+                                <p class="text-gray-400 text-xs">Dünya Trendleri Takibi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 border-t border-white/5 mt-20">
+        <div class="container mx-auto px-4 text-center text-gray-500">
+            <p>© 2026 BUGRA FC. Geleceği Birlikte Tasarlıyoruz.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+            const menuBtn = document.getElementById('menu-btn'), mobileMenu = document.getElementById('mobile-menu'), menuIcon = document.getElementById('menu-icon');
+            menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); menuIcon.setAttribute('data-lucide', mobileMenu.classList.contains('hidden') ? 'menu' : 'x'); lucide.createIcons(); });
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        if (entry.target.classList.contains('counter')) animateCounter(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+            document.querySelectorAll('.fade-in-up, .counter').forEach(el => observer.observe(el));
+
+            function animateCounter(el) {
+                const target = parseInt(el.dataset.target);
+                let count = 0;
+                const speed = target / 100;
+                const update = () => {
+                    count += speed;
+                    if (count < target) { el.innerText = Math.floor(count).toLocaleString(); setTimeout(update, 20); }
+                    else { el.innerText = target.toLocaleString() + '+'; }
+                };
+                update();
+            }
+        });
+    </script>
+</body>
+</html>

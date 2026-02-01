@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımda - Buğra'nın Hikayesi | BUGRA FC</title>
+    
+    <meta name="description" content="Ben Buğra. 13 yaşında başlayan YouTube ve içerik üreticiliği serüvenimden, yazılım ve grafik tasarım alanındaki profesyonel çalışmalarıma uzanan hikayem.">
+    <meta name="keywords" content="hakkımda, Buğra, Bugra FC, portfolyo, yazılım, grafik tasarım">
+    <meta name="author" content="BUGRA FC">
+    <meta name="theme-color" content="#0f0c29">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #0a0a0a; color: #e5e7eb; }
+        .animated-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: linear-gradient(45deg, #0f0c29, #302b63, #24243e, #1f379b); background-size: 400% 400%; animation: gradient-animation 20s ease infinite; }
+        @keyframes gradient-animation { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+        ::-webkit-scrollbar { width: 8px; } ::-webkit-scrollbar-track { background: #111827; } ::-webkit-scrollbar-thumb { background: #0ea5e9; border-radius: 10px; }
+        .fade-in-up { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+        .is-visible { opacity: 1; transform: translateY(0); }
+        
+        /* Kart Hover Efektleri */
+        .stat-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px -10px rgba(14, 165, 233, 0.3); }
+        
+        /* Buton Parlama Efekti */
+        .glow-btn { position: relative; overflow: hidden; }
+        .glow-btn::after { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent); transition: 0.5s; }
+        .glow-btn:hover::after { left: 100%; }
+    </style>
+</head>
+<body class="overflow-x-hidden flex flex-col min-h-screen">
+
+    <div class="animated-bg"></div>
+    
+    <header class="fixed top-0 left-0 w-full bg-black/30 backdrop-blur-sm z-40 shadow-lg shadow-sky-900/10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index2.html" class="text-3xl font-black text-white tracking-wider hover:text-sky-400 transition-colors">BUGRA FC</a>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-200 hover:text-sky-400 font-semibold transition-colors">Anasayfa</a>
+                    <a href="hakkimda.html" class="text-sky-400 font-bold transition-colors">Hakkımızda</a>
+                    <a href="Yazilim.html" class="text-gray-200 hover:text-sky-400 font-semibold transition-colors">Yazılım</a>
+                    <a href="GrafikTasarim.html" class="text-gray-200 hover:text-sky-400 font-semibold transition-colors">Grafik Tasarım</a>
+                    <a href="SosyalMedya.html" class="text-gray-200 hover:text-sky-400 font-semibold transition-colors">Sosyal Medya</a>
+                    <a href="iletisim.html" class="text-gray-200 hover:text-sky-400 font-semibold transition-colors">İletişim</a>
+                </nav>
+
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white hover:text-sky-400 transition-colors">
+                        <i id="menu-icon" data-lucide="menu" class="w-8 h-8"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-black/90 backdrop-blur-md absolute w-full border-t border-gray-800">
+            <a href="index.html" class="block py-4 px-6 text-white text-center hover:bg-sky-500/20 transition-colors">Anasayfa</a>
+            <a href="hakkimda.html" class="block py-4 px-6 text-sky-400 font-bold text-center bg-sky-500/10 transition-colors">Hakkımızda</a>
+            <a href="Yazilim.html" class="block py-4 px-6 text-white text-center hover:bg-sky-500/20 transition-colors">Yazılım</a>
+            <a href="GrafikTasarim.html" class="block py-4 px-6 text-white text-center hover:bg-sky-500/20 transition-colors">Grafik Tasarım</a>
+            <a href="SosyalMedya.html" class="block py-4 px-6 text-white text-center hover:bg-sky-500/20 transition-colors">Sosyal Medya</a>
+            <a href="iletisim.html" class="block py-4 px-6 text-white text-center hover:bg-sky-500/20 transition-colors">İletişim</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="py-24 sm:py-32">
+            <div class="container mx-auto px-4">
+                <div class="grid lg:grid-cols-5 gap-12 items-center max-w-6xl mx-auto">
+                    
+                    <div class="lg:col-span-2 fade-in-up relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-sky-600 to-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                        <img src="HAKKIMDA.jpg" alt="Buğra" class="relative rounded-2xl shadow-2xl shadow-sky-900/50 w-full object-cover aspect-[4/5] object-center border border-gray-800">
+                    </div>
+
+                    <div class="lg:col-span-3 fade-in-up" style="transition-delay: 200ms;">
+                        <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-sky-300 uppercase bg-sky-900/30 rounded-full border border-sky-500/30">
+                            İçerik Üreticisi & Geliştirici
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl font-black text-white mb-6 leading-tight">
+                            Benim <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-600">Hikayem</span>
+                        </h1>
+                        
+                        <div class="space-y-6 text-lg text-gray-300 leading-relaxed">
+                            <p>Ben Buğra. 13 yaşımda YouTube serüvenime adım attım. Kısa bir ara verdikten sonra daha güçlü bir şekilde geri döndüm ve <strong>BugraFCYT</strong> Instagram hesabını kurdum. Burada içeriklerimiz kısa sürede büyük bir ilgi gördü ve aylık en az <span class="text-white font-semibold">1 milyon</span> izlenmeye ulaştık.</p>
+
+                            <p>Sadece içerik üretmekle kalmadım, aynı zamanda farklı alanlarda da kendimi geliştirdim. 13 yaşımdan itibaren grafik tasarımla ilgilenmeye başladım, yıllar içerisinde birçok firmanın kurumsal kimliğini oluşturdum. 15 yaşımdan bu yana ise <strong>yazılım</strong> dünyasındayım.</p>
+
+                            <p>Bu web sitesi; geliştirdiğim projeleri sergilemek ve bir portföy oluşturmak için var. Hedefim her zaman insanların hayatına değer katacak projeler üretmek.</p>
+                        </div>
+
+                        <div class="mt-8 mb-8">
+                            <a href="Yazilim.html" class="glow-btn inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-sky-600 to-blue-700 text-white font-bold rounded-xl shadow-lg shadow-sky-900/40 hover:scale-105 transition-transform">
+                                <span>Projelerimi İncele</span>
+                                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+
+                        <div class="mt-8 border-t border-gray-800/50 pt-6">
+                            <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wide mb-3">Uzmanlık Alanlarım</h3>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="px-4 py-2 bg-gray-800/50 hover:bg-sky-900/30 text-gray-300 hover:text-sky-300 rounded-lg text-sm border border-gray-700 hover:border-sky-500/50 transition-all cursor-default">Adobe Photoshop</span>
+                                <span class="px-4 py-2 bg-gray-800/50 hover:bg-sky-900/30 text-gray-300 hover:text-sky-300 rounded-lg text-sm border border-gray-700 hover:border-sky-500/50 transition-all cursor-default">Video Kurgu</span>
+                                <span class="px-4 py-2 bg-gray-800/50 hover:bg-sky-900/30 text-gray-300 hover:text-sky-300 rounded-lg text-sm border border-gray-700 hover:border-sky-500/50 transition-all cursor-default">Web Geliştirme</span>
+                                <span class="px-4 py-2 bg-gray-800/50 hover:bg-sky-900/30 text-gray-300 hover:text-sky-300 rounded-lg text-sm border border-gray-700 hover:border-sky-500/50 transition-all cursor-default">Sosyal Medya</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 flex items-center gap-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-sky-500 hover:scale-110 transition-all duration-300">
+                                <i data-lucide="instagram" class="w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-red-600 hover:scale-110 transition-all duration-300">
+                                <i data-lucide="youtube" class="w-5 h-5"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-blue-500 hover:scale-110 transition-all duration-300">
+                                <i data-lucide="linkedin" class="w-5 h-5"></i>
+                            </a>
+                            <a href="mailto:iletisim@bugrafc.com" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-green-500 hover:scale-110 transition-all duration-300">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="max-w-6xl mx-auto mt-20 grid grid-cols-1 md:grid-cols-3 gap-6 fade-in-up" style="transition-delay: 400ms;">
+                    <div class="stat-card bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-2xl text-center group">
+                        <div class="inline-flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-sky-500/10 text-sky-400 group-hover:bg-sky-500 group-hover:text-white transition-colors">
+                            <i data-lucide="trending-up" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-white mb-2">10M+</h3>
+                        <p class="text-gray-400 font-medium">Toplam Erişim</p>
+                    </div>
+                    
+                    <div class="stat-card bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-2xl text-center group">
+                        <div class="inline-flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-purple-500/10 text-purple-400 group-hover:bg-purple-500 group-hover:text-white transition-colors">
+                            <i data-lucide="code-2" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-4xl font-bold text-white mb-2">3 Yıl</h3>
+                        <p class="text-gray-400 font-medium">Yazılım Tecrübesi</p>
+                    </div>
+
+                    <div class="stat-card bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-2xl text-center group">
+                        <div class="inline-flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-pink-500/10 text-pink-400 group-hover:bg-pink-500 group-hover:text-white transition-colors">
+                            <i data-lucide="palette" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-4xl font-bold text-white mb-2">50+</h3>
+                        <p class="text-gray-400 font-medium">Tasarım Projesi</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-8 bg-black/80 backdrop-blur-md border-t border-white/5 mt-auto">
+        <div class="container mx-auto px-4 text-center text-gray-500">
+            <p class="flex items-center justify-center gap-2">
+                © 2025 <span class="text-sky-500 font-bold">BUGRA FC</span> Tüm Hakları Saklıdır.
+            </p>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // İkonları oluştur
+            lucide.createIcons();
+
+            // Mobil Menü İşlemleri
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                // İkonu değiştir (Menu <-> X)
+                if (mobileMenu.classList.contains('hidden')) {
+                    menuIcon.setAttribute('data-lucide', 'menu');
+                } else {
+                    menuIcon.setAttribute('data-lucide', 'x');
+                }
+                lucide.createIcons();
+            });
+            
+            // Scroll Animasyonu (Fade In Up)
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if (entry.target.classList.contains('fade-in-up')) {
+                            entry.target.classList.add('is-visible');
+                        }
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.fade-in-up').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
